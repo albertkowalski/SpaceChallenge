@@ -1,5 +1,6 @@
 public class U1 extends Rocket {
     {
+        rocketCost = 100;
         rocketWeight = 10000;
         maxWeight = 18000;
         cargoCarried = 0;
@@ -7,19 +8,9 @@ public class U1 extends Rocket {
 
     }
     public boolean launch() {
-        if(Math.random() >= 0.05 * cargoCarried / cargoLimit) {
-            return true;
-        }
-        else {
-            return false;
-        }
+        return Math.random() >= 0.05 * cargoCarried / cargoLimit;
     }
     public boolean land() {
-        if(Math.random() >= 0.01 * cargoCarried / cargoLimit) {
-            return true;
-        }
-        else {
-            return false;
-        }
+        return Math.random() >= 0.01 * cargoCarried / cargoLimit;
     }
 }

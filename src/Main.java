@@ -10,7 +10,7 @@ public class Main {
         System.out.println(u1.cargoCarried);
         System.out.println(u1.cargoLimit);
         System.out.println(u1.launch());
-        File file = new File("phase-1.txt");
+        File file = new File("/src/phase-1.txt");
         Simulation simulation = new Simulation();
         System.out.println(simulation.loadItems(file));
         System.out.println(simulation.loadU1().size());
@@ -18,7 +18,7 @@ public class Main {
         System.out.println(simulation.runSimulation(simulation.u1Rockets));
         System.out.println(simulation.runSimulation(simulation.u2Rockets));
 
-        File file2 = new File("phase-2.txt");
+        File file2 = new File("/src/phase-2.txt");
         Simulation simulation2 = new Simulation();
         System.out.println(simulation2.loadItems(file));
         System.out.println(simulation.loadU1().size());

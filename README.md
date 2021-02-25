@@ -11,3 +11,5 @@ There is a two types of rockets - U1 (cheaper, safer but can take less cargo) an
 - "U1" and "U2" classes that extends "Rocket" class.
 - "Simulation" class which handle importing data and preparing simulations. 
 - "Main" class with main method and execution of "Simulation" class.
+## What's the complexity of this project?
+Low.
